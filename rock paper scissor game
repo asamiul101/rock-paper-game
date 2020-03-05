@@ -1,0 +1,32 @@
+import random 
+choice = raw_input("pick rock or paper or scissors ")
+
+computer = random.choice(["rock", "paper", "scissors"])
+print computer
+
+if choice == 'rock' and computer == 'rock':
+	print "game tied"
+
+if choice == 'rock' and computer == 'scissors':
+	print "you win"
+	
+if choice == 'rock' and computer == 'paper':
+	print "you lose"
+	
+if choice == 'paper' and computer == 'paper':
+	print "game tied"
+	
+if choice == 'paper'and computer == 'rock':
+	print "you win"
+	
+if choice == 'paper' and computer == 'scissors':
+	print "you lose"
+	
+if choice == 'scissors' and computer == 'scissors':
+	print "game tied"
+	
+if choice == 'scissors' and computer == 'paper':
+	print "you win"
+	
+if choice == 'scissors' and computer == 'rock':
+	print "you lose"
